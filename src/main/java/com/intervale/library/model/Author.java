@@ -31,8 +31,5 @@ public class Author {
     private LocalDate birthDate;
 
     @ManyToMany(mappedBy = "authors", fetch = FetchType.LAZY)
-//    @JoinTable(name = "product_authors",
-//            joinColumns = @JoinColumn(name = "author_id"),
-//            inverseJoinColumns = @JoinColumn(name = "product_id"))
     private List<Product> products;
 }
